@@ -31,9 +31,9 @@ export class AppModule implements NestMiddleware {
     }
 
     configure(consumer: MiddlewaresConsumer): void {
-        consumer.apply(CorsMiddleware).forRoutes(
-            '/cat',
-        );
+        // TODO: Figure out middleware for auth and tokens
+        // consumer.apply(AuthMiddleware).forRoutes('/cat');
+        consumer.apply(CorsMiddleware).forRoutes('/cat');
     }
 }
 
