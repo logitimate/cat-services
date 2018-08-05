@@ -5,12 +5,13 @@ import {Cat} from './cat.entity';
 import * as AWS from 'aws-sdk';
 import * as multer from 'multer';
 import * as multerS3 from 'multer-s3';
+import {environment} from '../../env';
 
 const AWS_S3_BUCKET_NAME = 'catpartycatphotos';
 const s3 = new AWS.S3();
 AWS.config.update({
-    accessKeyId: 'AKIAJRKDOVLQEEGXZYRA',
-    secretAccessKey: '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',
+    accessKeyId: environment.accessKeyId,
+    secretAccessKey: environment.secretAccessKey,
 });
 
 @Injectable()
