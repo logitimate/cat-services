@@ -20,6 +20,7 @@
     "@nest-middlewares/helmet": "^5.0.0",
     "@nestjs/common": "^5.0.0",
     "@nestjs/core": "^5.0.0",
+    "@nestjs/swagger": "^2.2.0",
     "@nestjs/typeorm": "^5.1.0",
     "aws-sdk": "^2.286.2",
     "cors": "^2.8.4",
